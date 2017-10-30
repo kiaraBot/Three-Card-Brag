@@ -96,14 +96,22 @@ public class FXMLDocumentController implements Initializable {
 
     // FXMLDocController Private Methods
     private void dealTheCards(){
-        String drawTopCard =  card.drawTopCard();
-
-        int rank = 0;
-        // Assign Top Cards into the Player Arrays  
+        // Shuffle the Cards
+        // ---------------------------
+        card.shuffle();
+        
+        // Draw the Top 3 Cards for Each Player
+        // -------------------------------------------------------
+        int rank = 0; 
+                
         // Player One
-        playerOneCards[0] = new Card(rank, drawTopCard);        // This is all wrong I know it. 
+        // Can I do a foreach or a for loop to fill array with cards?
+        String drawTopCard =  card.drawTopCard();
+        playerOneCards[0] = new Card(rank, drawTopCard);     
         playerOneCards[1] = new Card(rank, drawTopCard);
         playerOneCards[2] = new Card(rank, drawTopCard);
+        
+        
         // Player Two
         playerTwoCards[0] = new Card(rank, drawTopCard);
         playerTwoCards[1] = new Card(rank, drawTopCard);
