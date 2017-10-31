@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="BaseAnchorPane" prefHeight="504.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="field.p6_java.FXMLDocumentController">
+   <children>
+      <VBox fx:id="VBox" layoutX="10.0" layoutY="10.0" prefHeight="476.0" prefWidth="780.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <HBox fx:id="studentRulesHeaderHBox" prefHeight="138.0" prefWidth="780.0">
+               <children>
+                  <Label fx:id="studentHeaderLabel" prefHeight="122.0" prefWidth="141.0" text="Three Card Brag&#10;P6: Group Project&#10;Alexander Kolberg&#10;Alix Field&#10;Nathan Butcher">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="15.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <SplitPane dividerPositions="0.22900763358778625" orientation="VERTICAL" prefHeight="133.0" prefWidth="613.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <MenuBar fx:id="showRulesMenuBar" layoutY="1.0" prefHeight="27.0" prefWidth="611.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <menus>
+                                  <Menu fx:id="mentabShowRules" mnemonicParsing="false" text="Show Rules">
+                                    <items>
+                                      <MenuItem fx:id="showRulesMenuItem" mnemonicParsing="false" onAction="#itemShowRulesPressed" text="Show Rules" />
+                                          <MenuItem mnemonicParsing="false" text="Close" />
+                                    </items>
+                                  </Menu>
+                                </menus>
+                              </MenuBar>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <TextArea fx:id="gameRulesTxtArea" layoutX="67.0" layoutY="-24.0" prefHeight="98.0" prefWidth="611.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </TextArea>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <SplitPane fx:id="playerAreasSptPane" dividerPositions="0.5" orientation="VERTICAL" prefHeight="337.0" prefWidth="770.0">
+              <items>
+                <AnchorPane fx:id="p1_AncrPane1" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <SplitPane fx:id="p1_SptPane" dividerPositions="0.19418758256274768" prefHeight="162.0" prefWidth="768.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <items>
+                            <AnchorPane fx:id="p1_AncrPane2" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                 <children>
+                                    <TextField fx:id="p1Name_TxtField" alignment="CENTER" prefHeight="156.0" prefWidth="146.0" text="Player 1: Name" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </padding>
+                              </AnchorPane>
+                            <AnchorPane fx:id="p1_AncrPane3" minHeight="0.0" minWidth="0.0" prefHeight="156.0" prefWidth="617.0">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <children>
+                                    <HBox fx:id="pl1_HBOX" layoutX="123.0" layoutY="20.0" prefHeight="160.0" prefWidth="614.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <ImageView fx:id="p1_ImgView1" fitHeight="140.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true">
+                                             <HBox.margin>
+                                                <Insets left="15.0" right="15.0" />
+                                             </HBox.margin>
+                                          </ImageView>
+                                          <ImageView fx:id="p1_ImgView2" fitHeight="140.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true">
+                                             <HBox.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                             </HBox.margin>
+                                          </ImageView>
+                                          <ImageView fx:id="p1_ImgView3" fitHeight="140.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true">
+                                             <HBox.margin>
+                                                <Insets left="15.0" right="15.0" />
+                                             </HBox.margin>
+                                          </ImageView>
+                                          <Button fx:id="btnDealCards" mnemonicParsing="false" onAction="#btnDealCardsPressed" prefHeight="94.0" prefWidth="122.0" text="Deal &#10;Cards" textAlignment="CENTER">
+                                             <HBox.margin>
+                                                <Insets left="25.0" top="25.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane fx:id="p2_AncrPane1" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <SplitPane fx:id="p2_SptPane" dividerPositions="0.19418758256274768" prefHeight="162.0" prefWidth="768.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <items>
+                              <AnchorPane fx:id="p2_AncrPane2" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                 <children>
+                                    <TextField fx:id="p2Name_TxtField" alignment="CENTER" prefHeight="156.0" prefWidth="146.0" text="Player 2: Name" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </TextField>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </padding>
+                              </AnchorPane>
+                              <AnchorPane fx:id="p2_AncrPane3" minHeight="0.0" minWidth="0.0" prefHeight="168.0" prefWidth="616.0">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <children>
+                                    <HBox fx:id="p2_HBox" layoutX="135.0" layoutY="14.0" prefHeight="160.0" prefWidth="614.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <children>
+                                          <ImageView fx:id="p2_ImgView1" fitHeight="140.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true">
+                                             <HBox.margin>
+                                                <Insets left="15.0" right="15.0" />
+                                             </HBox.margin>
+                                          </ImageView>
+                                          <ImageView fx:id="p2_ImgView2" fitHeight="140.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true">
+                                             <HBox.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                             </HBox.margin>
+                                          </ImageView>
+                                          <ImageView fx:id="p2_ImgView3" fitHeight="140.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true">
+                                             <HBox.margin>
+                                                <Insets left="15.0" right="15.0" />
+                                             </HBox.margin>
+                                          </ImageView>
+                                          <Button fx:id="btnShowWinner" mnemonicParsing="false" onAction="#btnShowWinnerPressed" prefHeight="94.0" prefWidth="122.0" text="Show &#10;Winner" textAlignment="CENTER">
+                                             <HBox.margin>
+                                                <Insets left="25.0" top="25.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+              </items>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </SplitPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
